@@ -17,11 +17,12 @@ class Student extends Model
         'student_name',
         'student_email',
         'student_phone',
-        'department'
+        'department',
+
     ];
 
-    // public function studentToDepartment()
-    // {
-    //     return $this->hasOne(Department::class,'id');
-    // }
+    public function studentToDepartment()
+    {
+        return $this->hasOne(Department::class,'id');
+    }
 }

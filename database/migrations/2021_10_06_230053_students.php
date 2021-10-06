@@ -15,6 +15,7 @@ class Students extends Migration
     {
         Schema::table('students', function (Blueprint $table) {
             $table->string('department');
+
         });
     }
 

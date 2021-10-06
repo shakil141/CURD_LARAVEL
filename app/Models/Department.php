@@ -16,8 +16,8 @@ class Department extends Model
         'department_id'
     ];
 
-    // public function departmenttostudent()
-    // {
-    //     return $this->belongsTo(Student::class,'department_id');
-    // }
+    public function departmenttostudent()
+    {
+        return $this->belongsTo(Student::class,'department_id');
+    }
 }
